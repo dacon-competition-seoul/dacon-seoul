@@ -33,6 +33,7 @@ def main():
     df = df.reset_index()
     df = df.rename(columns={"관할구역": "자치구"})
     df["관할경찰서"] = df["자치구"].map(lambda x: juridict2[x])
+    df["건수"] = df["건수"].astype(int)
     df.to_csv(__dirname.joinpath("01-20_자치구별_5대범죄.csv"), index=False)
 
 
