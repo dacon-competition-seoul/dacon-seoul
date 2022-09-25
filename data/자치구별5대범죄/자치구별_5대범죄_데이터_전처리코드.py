@@ -10,6 +10,9 @@ def main():
     dfs = []
     for p in __dirname.joinpath("../서울_경찰서별_5대범죄_통계").glob("*.csv"):
         temp = pd.read_csv(p, encoding="cp949").dropna()
+        if "검거" in temp.columns:
+            temp = temp.rename(columns={"검거": "건수"})
+
         year = str(p)[-8:-4]
 
         temp["year"] = [year for _ in range(len(temp))]
@@ -34,6 +37,8 @@ def main():
     df = df.rename(columns={"관할구역": "자치구"})
     df["관할경찰서"] = df["자치구"].map(lambda x: juridict2[x])
     df["건수"] = df["건수"].astype(int)
+
+    df["죄종"] = df["죄종"].replace("강간", "강간,추행")
     df.to_csv(__dirname.joinpath("01-20_자치구별_5대범죄.csv"), index=False)
 
 
