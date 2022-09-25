@@ -8,7 +8,7 @@ def main():
 
     __dirname = Path(__file__).parent
     dfs = []
-    for p in __dirname.joinpath("data/서울_경찰서별_5대범죄_통계").glob("*.csv"):
+    for p in __dirname.joinpath("../서울_경찰서별_5대범죄_통계").glob("*.csv"):
         temp = pd.read_csv(p, encoding="cp949").dropna()
         year = str(p)[-8:-4]
 
@@ -20,11 +20,11 @@ def main():
     df = df.sort_values("year").reset_index(drop=True)
 
     with open(
-        __dirname.joinpath("data/지역별관할경찰서/경찰서별관할구역.json"), "r", encoding="utf-8"
+        __dirname.joinpath("../지역별관할경찰서/경찰서별관할구역.json"), "r", encoding="utf-8"
     ) as f:
         juridict1 = json.load(f)
     with open(
-        __dirname.joinpath("data/지역별관할경찰서/지역별관할경찰서.json"), "r", encoding="utf-8"
+        __dirname.joinpath("../지역별관할경찰서/지역별관할경찰서.json"), "r", encoding="utf-8"
     ) as f:
         juridict2 = json.load(f)
 
@@ -33,7 +33,7 @@ def main():
     df = df.reset_index()
     df = df.rename(columns={"관할구역": "자치구"})
     df["관할경찰서"] = df["자치구"].map(lambda x: juridict2[x])
-    df.to_csv("01-20_자치구별_5대범죄.csv", index=False)
+    df.to_csv(__dirname.joinpath("01-20_자치구별_5대범죄.csv"), index=False)
 
 
 if __name__ == "__main__":
