@@ -17,7 +17,7 @@ def main():
     )
 
     df = df[df["지방청"] == "서울"]
-    df = df.rename(columns={"년도": "ds", "경찰서": "office", "경찰관": "quota"}).drop(
+    df = df.rename(columns={"년도": "ds", "경찰서": "officeName", "경찰관": "quota"}).drop(
         "지방청", axis=1
     )
     answer = []
@@ -31,7 +31,7 @@ def main():
 
     df["quota"] = answer
     df["ds"] = df.ds.str[:4]
-    df["office"] = df.office.str[2:]
+    df["officeName"] = df.officeName.str[2:]
     df.to_csv(__dirname.joinpath("2014-2021_서울_경찰서별_정원.csv"), index=False)
 
 

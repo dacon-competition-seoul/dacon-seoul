@@ -39,6 +39,18 @@ def main():
     df["건수"] = df["건수"].astype(int)
 
     df["죄종"] = df["죄종"].replace("강간", "강간,추행")
+
+    df = df.rename(
+        columns={
+            "관할경찰서": "precinct",
+            "자치구": "gu",
+            "발생검거": "oa",
+            "건수": "crimeNum",
+            "죄종": "crimeName",
+        }
+    )
+    df["oa"] = df.oa.map(lambda x: "occur" if x == "발생" else "arrest")
+
     df.to_csv(__dirname.joinpath("01-20_자치구별_5대범죄.csv"), index=False)
 
 
