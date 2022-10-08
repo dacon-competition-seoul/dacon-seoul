@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://data.seoul.go.kr/
+HostUrl=https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false
