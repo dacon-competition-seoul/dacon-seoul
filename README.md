@@ -14,9 +14,9 @@
 <img width="800" align="center" alt="스크린샷10" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/58dc19b1-32a3-435d-b12f-578341c8edc8">      
 <img width="800" align="center" alt="스크린샷11" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/cce0db17-2686-4fb7-bfc2-6ec032189e20"> 
 <img width="800" align="center" alt="스크린샷12" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/35849ba8-6f09-45bf-bce2-c2d951fde8eb"> 
-<img width="750" align="center" alt="line_viz" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/70d34285-9d5a-4a3f-a23e-83109476bed5"> 
+<img width="500" align="center" alt="line_viz" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/70d34285-9d5a-4a3f-a23e-83109476bed5"> 
 <img width="800" align="center" alt="스크린샷13" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/953f9dea-1ef7-445e-8623-6212eaf51f0a"> 
-<img width="750" align="center" alt="cluster_viz" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/22f2ce0b-5609-43c7-a2bf-ab9469695994"> 
+<img width="500" align="center" alt="cluster_viz" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/22f2ce0b-5609-43c7-a2bf-ab9469695994"> 
 <img width="800" align="center" alt="스크린샷14" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/feb8ac2c-d3e5-4bed-9707-5128c7a062b1"> 
 <img width="800" align="center" alt="스크린샷15" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/420e6e49-558c-4fac-9a52-cba4509210f3">  
 <img width="800" align="center" alt="스크린샷16" src="https://github.com/dacon-competition-seoul/dacon-seoul/assets/47911773/074e468d-0f5d-4f13-a109-dc0e265794f0">       
